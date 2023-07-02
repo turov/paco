@@ -1138,6 +1138,13 @@ a:hover {
     margin: 0 auto;
 }
 
+.slide-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
 @media (min-width: 1300px) {
     .🎚️ {
         width: 1280px;
@@ -1147,7 +1154,8 @@ a:hover {
 
     .🎚️ .swiper {
         width: 50%;
-        padding-top: 158px;
+        /*padding-top: 158px;*/
+        padding-top: 0;
     }
 
     .🎚️🍓 {
