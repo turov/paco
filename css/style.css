@@ -1,6 +1,6 @@
-a:hover {
-    opacity: 0.8;
-}
+/*a:hover {*/
+/*    opacity: 0.8;*/
+/*}*/
 
 .📄 {
     background-color: #ffffff;
@@ -130,6 +130,7 @@ a:hover {
 }
 
 .🙂🧭🖇 {
+    position: relative;
     display: block;
     max-width: 355px;
     color: inherit;
@@ -184,6 +185,24 @@ a:hover {
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 400;
+    }
+
+    .🙂🧭🖇::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #33915C;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+
+    .🙂🧭🖇:link:hover::before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
     }
 }
 
@@ -401,7 +420,7 @@ a:hover {
     text-align: center;
 }
 
-.🥊🎉📦 .🥊🎉📦✏️::before{
+.🥊🎉📦 .🥊🎉📦✏️::before {
     content: '';
     width: 75px;
     height: 75px;
@@ -594,11 +613,11 @@ a:hover {
     display: none;
 }
 
-.🔪{
+.🔪 {
     padding: 24px 0;
 }
 
-.🔪🍟{
+.🔪🍟 {
     max-width: 355px;
     margin: 0 auto;
 }
@@ -665,7 +684,7 @@ a:hover {
         margin: 84px auto 0;
     }
 
-    .🔪🍟{
+    .🔪🍟 {
         max-width: 1175px;
         display: flex;
         flex-direction: row-reverse;
@@ -679,7 +698,7 @@ a:hover {
         height: 372px;
     }
 
-    .🔪💥{
+    .🔪💥 {
         margin-bottom: 32px;
     }
 }
@@ -709,7 +728,7 @@ a:hover {
 }
 
 .🔫📝✏️,
-.🔫✏️{
+.🔫✏️ {
     margin: 0 0 12px;
     font-size: 24px;
     font-weight: 700;
@@ -717,7 +736,7 @@ a:hover {
 }
 
 .🔫📝💬,
-.🔫💬{
+.🔫💬 {
     font-size: 18px;
     letter-spacing: 0.18px;
     color: #303030;
@@ -727,7 +746,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #94D591;
+    background: #FFFFFF;
+    border: 10px solid #94D591;
     width: 261px;
     height: 180px;
 }
@@ -792,7 +812,6 @@ a:hover {
     /*.🔫✏️ {*/
     /*    font-size: 40px;*/
     /*}*/
-
     .🔫📝💬 {
         font-size: 20px;
         line-height: 1.4;
@@ -1041,11 +1060,11 @@ a:hover {
     }
 }
 
-.🍍{
+.🍍 {
     padding-bottom: 24px;
 }
 
-.🍍🍟{
+.🍍🍟 {
     max-width: 355px;
     margin: 0 auto;
 }
@@ -1058,11 +1077,11 @@ a:hover {
 }
 
 @media (min-width: 1300px) {
-    .🍍{
+    .🍍 {
         padding-bottom: 48px;
     }
 
-    .🍍🍟{
+    .🍍🍟 {
         max-width: 1280px;
     }
 
@@ -1117,6 +1136,12 @@ a:hover {
     content: '';
     transform: unset;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='48' viewBox='0 0 75 48' fill='none'%3E%3Cpath d='M51.5303 24.5303C51.8232 24.2374 51.8232 23.7626 51.5303 23.4697L46.7574 18.6967C46.4645 18.4038 45.9896 18.4038 45.6967 18.6967C45.4038 18.9896 45.4038 19.4645 45.6967 19.7574L49.9393 24L45.6967 28.2426C45.4038 28.5355 45.4038 29.0104 45.6967 29.3033C45.9896 29.5962 46.4645 29.5962 46.7574 29.3033L51.5303 24.5303ZM24 24.75H51V23.25H24V24.75Z' fill='%233C3C3C'/%3E%3Crect x='0.75' y='0.75' width='73.5' height='46.5' rx='19.25' stroke='%233C3C3C' stroke-width='1.5'/%3E%3C/svg%3E");
+    border-radius: 20px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 0.7;
 }
 
 .🎚️ .swiper-button-prev::after {
@@ -1176,7 +1201,7 @@ a:hover {
     padding: 24px 10px;
 }
 
-.🍌🍟{
+.🍌🍟 {
     background: #33915C;
     padding: 24px 0;
 }
@@ -1205,7 +1230,7 @@ a:hover {
         height: auto;
     }
 
-    .🍌🍟{
+    .🍌🍟 {
         background: unset;
         padding: unset;
     }
@@ -1282,17 +1307,14 @@ a:hover {
     }
 }
 
-.table{
-    padding: 48px 10px;
-}
-
-.table-container {
+.table {
+    padding: 48px 10px 0;
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
 
-.table-title{
+.table-title {
     font-size: 24px;
     margin: 0 0 24px;
     text-align: center;
@@ -1312,7 +1334,7 @@ a:hover {
 }
 
 .table th,
-.table tbody tr td:nth-child(1){
+.table tbody tr td:nth-child(1) {
     font-weight: 300;
     font-size: 21px;
     letter-spacing: -0.42px;
@@ -1326,7 +1348,7 @@ a:hover {
     padding: 2px;
 }
 
-.table td::before{
+.table td::before {
     content: '';
     width: 1px;
     height: 19px;
@@ -1339,12 +1361,11 @@ a:hover {
 }
 
 
-
 .table tbody tr:nth-child(odd) {
     background-color: #f1efef;
 }
 
-.td-check{
+.td-check {
     background-image: url("data:image/svg+xml,%3Csvg data-v-269aa716='' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg' role='img' focusable='false' width='25' class='inline-block mx-auto'%3E%3Ctitle%3EHas this feature%3C/title%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.1512 4.05319L13.7098 2.66667L6.02705 10.0571L2.44138 6.60785L1 7.99437L4.58568 11.4436L4.57798 11.451L6.01935 12.8375L15.1512 4.05319Z' fill='%2333915C'%3E%3C/path%3E%3C/svg%3E");
     width: 25px;
     height: 25px;
@@ -1359,7 +1380,7 @@ a:hover {
     }
 
     .table th,
-    .table tbody tr td:nth-child(1){
+    .table tbody tr td:nth-child(1) {
         font-weight: 400;
     }
 
@@ -1578,18 +1599,37 @@ a:hover {
     .👣🧭🖇️ {
         color: #303030;
         text-decoration: none;
+        position: relative;
     }
 
-    .👣☎️✏️ {
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.16px;
-        margin-right: 24px;
+    .👣🧭🖇️::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #33915C;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
     }
 
-    .👣☎️💥:nth-child(1) {
-        margin-right: 24px;
+    .👣🧭🖇️:link:hover::before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
     }
+}
+
+.👣☎️✏️ {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    margin-right: 24px;
+}
+
+.👣☎️💥:nth-child(1) {
+    margin-right: 24px;
 }
 
 .🐴 {
@@ -1953,11 +1993,11 @@ a:hover {
     text-align: center;
 }
 
-.🐽🥈{
+.🐽🥈 {
     display: none;
 }
 
-.📼📹{
+.📼📹 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2007,22 +2047,22 @@ a:hover {
         font-size: 18px;
     }
 
-    .🐽🥈{
+    .🐽🥈 {
         display: block;
     }
 
-    .🐽🍟🐯{
+    .🐽🍟🐯 {
         display: flex;
         flex-direction: row-reverse;
         max-width: 1280px;
         margin: 0 auto;
     }
 
-    .🐽🥇{
+    .🐽🥇 {
         margin-left: auto;
     }
 
-    .🐽🥇 .🐽✏️{
+    .🐽🥇 .🐽✏️ {
         max-width: 512px;
     }
 }
@@ -2147,7 +2187,7 @@ a:hover {
     transform: rotate(180deg);
 }
 
-.🌈🖥️🥖{
+.🌈🖥️🥖 {
     display: none;
 }
 
@@ -2182,7 +2222,7 @@ a:hover {
         padding: 0 0 84px;
     }
 
-    .🌈🎚️{
+    .🌈🎚️ {
         position: relative;
     }
 
@@ -2201,7 +2241,7 @@ a:hover {
         padding: 84px 0 48px;
     }
 
-    .🌈🎚️ .swiper-slide{
+    .🌈🎚️ .swiper-slide {
         font-size: 20px;
         letter-spacing: 0.2px;
         display: flex;
@@ -2212,12 +2252,12 @@ a:hover {
         margin-top: auto;
     }
 
-    .swiper-slide-raiting{
+    .swiper-slide-raiting {
         display: block;
         margin: 0 auto;
     }
 
-    .🌈🖥️🥖{
+    .🌈🖥️🥖 {
         display: block;
         width: fit-content;
         padding: 16px 46px;
@@ -2300,7 +2340,7 @@ a:hover {
         font-size: 20px;
     }
 
-    .🦊🥖{
+    .🦊🥖 {
         padding: 16px 46px;
         font-size: 18px;
     }
@@ -2374,26 +2414,26 @@ a:hover {
         padding: 45px 0 84px;
     }
 
-    .🐯🍟{
-       width: 1280px;
+    .🐯🍟 {
+        width: 1280px;
     }
 
-    .🐯✏️{
+    .🐯✏️ {
         font-size: 40px;
     }
 
-    .🐯💬{
+    .🐯💬 {
         font-size: 20px;
         letter-spacing: 0.2px;
         margin-bottom: 55px;
     }
 
-    .🐯📝{
+    .🐯📝 {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .🐯💥{
+    .🐯💥 {
         width: 25%;
         display: flex;
         flex-direction: column;
@@ -2401,12 +2441,12 @@ a:hover {
         padding: 0 50px;
     }
 
-    .🐯💥🖼️{
+    .🐯💥🖼️ {
         margin-bottom: 0;
         margin-left: 0;
     }
 
-    .🐯💥💬{
+    .🐯💥💬 {
         font-size: 20px;
         letter-spacing: 0.2px;
         max-width: 220px;
@@ -2414,7 +2454,7 @@ a:hover {
         text-align: left;
     }
 
-    .🐯💥🖇️{
+    .🐯💥🖇️ {
         text-align: left;
     }
 }
@@ -2492,24 +2532,56 @@ a:hover {
 }
 
 @media (min-width: 1300px) {
-    .🏆{
+    .🏆 {
         padding: 45px 0 84px;
     }
-    .🏆🍟{
+
+    .🏆🍟 {
         max-width: 992px;
     }
 
-    .🏆✏️{
+    .🏆✏️ {
         font-size: 40px;
     }
 
-    .🪗{
+    .🪗 {
         font-size: 20px;
     }
 
-    .🎛️{
+    .🎛️ {
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: 0.2px;
     }
+}
+
+.🥖🌈 {
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.🥖🌈:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+}
+
+.🥖🌈:hover {
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+
+.🥖🌈:hover:after {
+    background: #94D591;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
