@@ -639,8 +639,8 @@
 }
 
 .🔪💥 {
-    width: 50%;
-    padding-right: 31px;
+    /*width: 50%;*/
+    /*padding-right: 31px;*/
     margin-bottom: 24px;
 }
 
@@ -689,6 +689,7 @@
         max-width: 1175px;
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
     }
 
     .🔪🖼️ {
