@@ -288,7 +288,8 @@
 }
 
 .💡🍭💥 {
-    margin-right: 16px;
+
+    /*margin-right: 16px;*/
 }
 
 @media (min-width: 1300px ) {
@@ -358,30 +359,30 @@
         margin-right: 24px;
     }
 
-    .💡🍭💥:nth-child(1) .💡🍭🖼️ {
-        width: 89px;
-        height: 32px;
-    }
+    /*.💡🍭💥:nth-child(1) .💡🍭🖼️ {*/
+    /*    width: 89px;*/
+    /*    height: 32px;*/
+    /*}*/
 
-    .💡🍭💥:nth-child(2) .💡🍭🖼️ {
-        width: 93px;
-        height: 16px;
-    }
+    /*.💡🍭💥:nth-child(2) .💡🍭🖼️ {*/
+    /*    width: 93px;*/
+    /*    height: 16px;*/
+    /*}*/
 
-    .💡🍭💥:nth-child(3) .💡🍭🖼️ {
-        width: 39px;
-        height: 55px;
-    }
+    /*.💡🍭💥:nth-child(3) .💡🍭🖼️ {*/
+    /*    width: 39px;*/
+    /*    height: 55px;*/
+    /*}*/
 
-    .💡🍭💥:nth-child(4) .💡🍭🖼️ {
-        width: 57px;
-        height: 60px;
-    }
+    /*.💡🍭💥:nth-child(4) .💡🍭🖼️ {*/
+    /*    width: 57px;*/
+    /*    height: 60px;*/
+    /*}*/
 
-    .💡🍭💥:nth-child(5) .💡🍭🖼️ {
-        width: 89px;
-        height: 26px;
-    }
+    /*.💡🍭💥:nth-child(5) .💡🍭🖼️ {*/
+    /*    width: 89px;*/
+    /*    height: 26px;*/
+    /*}*/
 }
 
 .🥊 {
@@ -1082,11 +1083,11 @@
     }
 
     .🍍🍟 {
-        max-width: 1280px;
+        max-width: 800px;
     }
 
     .🍍🍟 iframe {
-        height: 720px;
+        height: 453px;
     }
 }
 
@@ -1202,7 +1203,6 @@
 }
 
 .🍌🍟 {
-    background: #33915C;
     padding: 24px 0;
 }
 
@@ -2584,4 +2584,78 @@
     background: #94D591;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.🌋 {
+    padding: 24px 10px;
+}
+
+.🌋🍟{
+    max-width: 355px;
+    margin: 0 auto;
+}
+
+.🌋✏️{
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p.🌋💬{
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: 0.18px;
+}
+
+.🌋🥖{
+    display: inline-block;
+    padding: 8px 13px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background: #33915C;
+    text-decoration: none;
+}
+
+@media (min-width: 1300px) {
+    .🌋 {
+        padding: 48px 0;
+    }
+
+    .🌋🍟{
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .🌋🍟 img {
+        width: 381px;
+        height: 521px;
+        display: block;
+        margin-left: 132px;
+    }
+
+    .🌋✏️{
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    .🌋💬️{
+        margin: 0 0 20px;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+    }
+
+    .🌋🥖{
+        padding: 16px 46px;
+        font-size: 18px;
+    }
 }
