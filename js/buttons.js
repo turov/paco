@@ -1,5 +1,5 @@
 (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    const scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
         if (window.ShopifyBuy.UI) {
             ShopifyBuyInit();
@@ -62,14 +62,13 @@
                                     "padding-bottom": "17px"
                                 }
                             },
-                            "buttonDestination": "checkout",
                             "contents": {
                                 "img": false,
                                 "title": false,
                                 "price": false
                             },
                             "text": {
-                                "button": "Buy now"
+                                "button": "Add to cart"
                             }
                         },
                         "productSet": {
