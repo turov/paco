@@ -1,4 +1,3 @@
-/*<![CDATA[*/
 (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
@@ -63,13 +62,14 @@
                                     "padding-bottom": "17px"
                                 }
                             },
+                            "buttonDestination": "checkout",
                             "contents": {
                                 "img": false,
                                 "title": false,
                                 "price": false
                             },
                             "text": {
-                                "button": "Add to cart"
+                                "button": "Buy now"
                             }
                         },
                         "productSet": {
@@ -141,7 +141,8 @@
                             "text": {
                                 "total": "Subtotal",
                                 "button": "Checkout"
-                            }
+                            },
+                            "popup": false
                         },
                         "toggle": {
                             "styles": {
