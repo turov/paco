@@ -296,7 +296,7 @@
 }
 
 .💡💬 {
-    margin: 0 0 16px;
+    margin: 0 0 32px;
     max-width: 330px;
 }
 
@@ -832,6 +832,10 @@
     display: none;
 }
 
+.🔫📝💥💯 {
+    margin-bottom: 40px;
+}
+
 
 @media (min-width: 1300px) {
     .🔫 {
@@ -869,6 +873,7 @@
 
     .🔫📝💥💯 {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .🔫📝💥🥖 {
@@ -960,10 +965,6 @@
     padding-top: 77px;
     counter-increment: my-awesome-counter;
     margin-bottom: 32px;
-}
-
-.🪜💥:last-child {
-    margin-bottom: 0;
 }
 
 .🪜💥::before {
@@ -2231,7 +2232,7 @@
 
 .🌈🙂🖼️ {
     display: block;
-    margin: 0 8px;
+    margin: 0 auto 32px;
     flex-shrink: 0;
 }
 
@@ -2435,6 +2436,10 @@
     margin: 0 0 16px;
     font-size: 18px;
     letter-spacing: 0.18px;
+}
+
+.🦊💬:last-of-type {
+    margin-bottom: 32px;
 }
 
 .🦊🥖 {
