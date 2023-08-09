@@ -47,6 +47,8 @@
                                     "font-size": "18px",
                                     "padding-top": "17px",
                                     "padding-bottom": "17px",
+                                    "margin": btn.classList.contains('shop-btn-center') ? "0 auto !important" : "-20px auto 0 0 !important",
+                                    "display": "block",
                                     ":hover": {
                                         "background-color": "#2e8353"
                                     },
@@ -68,7 +70,7 @@
                                 "price": false
                             },
                             "text": {
-                                "button": "Add to cart"
+                                "button": btn.getAttribute('data-text') || "Order Now"
                             }
                         },
                         "productSet": {

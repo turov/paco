@@ -177,12 +177,9 @@
 
     .🙂 .shop-btn {
         display: block;
+        position: relative;
     }
 
-    .🙂 .shop-btn {
-        position: relative;
-        margin-top: -40px !important;
-    }
 
     .🙂🖼️ {
         width: 98px;
@@ -450,7 +447,7 @@
 }
 
 .🥊 {
-    padding: 24px 12px;
+    padding: 24px 12px 68px;
 }
 
 .🥊🍟 {
@@ -504,9 +501,9 @@
     background-image: url('../assets/icon2.svg');
 }
 
-.🥊🎉📦:last-child {
-    margin-bottom: 0;
-}
+/*.🥊🎉📦:last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
 
 .🥊🎉📦:nth-child(3) .🥊🎉📦✏️::before {
     background-image: url('../assets/icon3.png');
@@ -870,9 +867,13 @@
         padding: 0 10px;
     }
 
-    .🔫📝💥:last-child {
-        margin-bottom: 0;
+    .🔫📝💥💯 {
         width: 100%;
+    }
+
+    .🔫📝💥🥖 {
+        width: 100%;
+        margin-bottom: 0;
     }
 
     /*.🔫✏️ {*/
@@ -2803,8 +2804,12 @@ p.🌋💬 {
     margin-top: 0 !important;
 }
 
+.shop-btn .shopify-buy__btn-wrapper {
+    display: flex !important;
+}
+
 .shop-btn {
-    width: 171px;
+    max-width: fit-content;
     height: 56px;
 }
 
@@ -2822,7 +2827,7 @@ p.🌋💬 {
 
 }
 
-.shop-btn {
+.🙂 .shop-btn:not(.shop-btn-mobile) {
     display: none !important;
 }
 
@@ -2835,9 +2840,11 @@ p.🌋💬 {
         display: none !important;
     }
 
-    .shop-btn {
+    .shop-btn,
+    .🙂 .shop-btn:not(.shop-btn-mobile) {
         display: block !important;
     }
+
 }
 
 .about-slider️️ .swiper {
