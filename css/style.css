@@ -206,6 +206,7 @@
     .🙂 .shop-btn {
         order: 2;
         flex-shrink: 0;
+        width: 176px;
     }
 
     .🙂🧭📝 {
@@ -662,6 +663,14 @@
     }
 }
 
+.🥎📦🥥:nth-child(1) {
+    margin-right: 0;
+}
+
+.🥎📦🥥:nth-child(2) {
+    margin-left: 0;
+}
+
 .🥎📦🥥:last-child {
     background: #94D591;
 }
@@ -764,6 +773,11 @@
     .🔪💥 {
         margin-bottom: 32px;
     }
+
+    /*.🥎📦🥥 {*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    /*}*/
 }
 
 .🔫 {
@@ -1004,6 +1018,10 @@
     display: none;
 }
 
+.🥎📦🥇 {
+    margin-bottom: 8px;
+}
+
 @media (min-width: 1300px) {
     .🪜 {
         padding: 59px 0 84px;
@@ -1112,6 +1130,7 @@
         display: flex;
         justify-content: end;
         width: 50%;
+        margin-bottom: 0;
     }
 
     .🥎📦🥈 {
@@ -1134,6 +1153,10 @@
         /*margin-bottom: 24px;*/
         margin: 0 16px 0 0;
         font-size: 48px;
+    }
+
+    .🥎📦🥥:nth-child(1) {
+        margin: 0 16px 0 0;
     }
 
     .🥎📦🥥:nth-child(2) {
@@ -1326,12 +1349,13 @@
 }
 
 .🍌🍟 {
-    padding: 24px 0;
+    padding: 24px 0 48px;
 }
+
 
 .🍌🖼️📱 {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 48px;
 }
 
 .🍌🖼️🖥️ {
@@ -1356,6 +1380,13 @@
     .🍌🍟 {
         background: unset;
         padding: unset;
+        padding-bottom: 64px;
+    }
+
+    .🍌🍟 .shop-btn {
+
+        margin-top: -96px;
+
     }
 }
 
@@ -1449,6 +1480,7 @@
     border-radius: 8px;
     max-width: 355px;
     overflow: scroll;
+    margin-bottom: 24px;
 }
 
 .table tr td:last-child {
@@ -2302,6 +2334,7 @@
     height: 36px;
     display: block;
     margin-top: 0;
+    -webkit-user-select: none;
 }
 
 .🌈🎚️ .swiper-button-prev {
@@ -2969,11 +3002,13 @@ p.🌋💬 {
         display: block;
     }
 
-    /*.about-slider .about-slider-image-container {*/
-    /*    width: 640px;*/
-    /*    height: 640px;*/
-    /*}*/
     .about-slider .swiper-navigation {
         margin: 0;
     }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    -webkit-user-select: none;
 }
