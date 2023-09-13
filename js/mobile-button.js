@@ -64,7 +64,7 @@
                             "price": false
                         },
                         "text": {
-                            "button": "Order Now"
+                            "button": "Get Started"
                         }
                     },
                     "productSet": {

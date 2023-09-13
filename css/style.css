@@ -23,7 +23,7 @@
 }
 
 .🙂 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 4px 12px;
@@ -41,7 +41,7 @@
 }
 
 .🙂🖇️ {
-    margin-left: auto;
+    order: 0;
     margin-right: auto;
 }
 
@@ -83,7 +83,8 @@
     width: 17px;
     height: 17px;
     background: #FFFFFF;
-    order: -1;
+    order: 3;
+    margin-left: 12px;
 }
 
 .🙂🍔 span {
@@ -338,7 +339,9 @@
 }
 
 .💡🪛 {
-    font-size: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
     line-height: 12px;
     display: block;
     font-weight: 400;
@@ -351,6 +354,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .💡🍭💥 {
@@ -413,7 +417,7 @@
     }
 
     .💡🙂📔 {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 18px;
     }
 
@@ -430,6 +434,15 @@
         margin-bottom: 32px;
     }
 
+    .💡🍭 {
+        margin-top: 32px;
+        padding-right: 48px;
+    }
+
+    .💡🍭📝{
+        justify-content: space-between;
+    }
+
     .💡🥖 {
         padding: 16px 46px;
         font-size: 18px;
@@ -441,12 +454,13 @@
     }
 
     .💡🪛 {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 14px;
     }
 
     .💡🍭💥 {
-        margin-right: 24px;
+        /*margin-right: 24px;*/
     }
 
     /*.💡🍭💥:nth-child(1) .💡🍭🖼️ {*/
@@ -741,7 +755,8 @@
 .🔪✏️ {
     margin: 0 0 6px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.4;
     letter-spacing: 0.9px;
     text-transform: uppercase;
     color: #33915C;
@@ -770,7 +785,7 @@
     margin: 0;
     color: #70675C;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.4;
 }
 
 @media (min-width: 1300px) {
@@ -1119,7 +1134,6 @@
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: 0.2px;
-        font-weight: 700;
     }
 
     .🥎 {
@@ -1239,6 +1253,9 @@
 .🎚️ .swiper-slide p {
     margin: 0;
     text-align: left;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
 }
 
 .slide-decor {
@@ -1493,7 +1510,7 @@
 }
 
 .table-title {
-    font-size: 24px;
+    font-size: 40px;
     margin: 0 0 24px;
     text-align: center;
 }
@@ -1515,8 +1532,9 @@
 .table th,
 .table tbody tr td:nth-child(1) {
     font-weight: 300;
-    font-size: 21px;
-    letter-spacing: -0.42px;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
@@ -1558,10 +1576,10 @@
         padding: 12px;
     }
 
-    .table th,
-    .table tbody tr td:nth-child(1) {
-        font-weight: 400;
-    }
+    /*.table th,*/
+    /*.table tbody tr td:nth-child(1) {*/
+    /*    font-weight: 400;*/
+    /*}*/
 
     .table table {
         max-width: 100%;
@@ -2147,7 +2165,7 @@
 .🐽💥 {
     padding-top: 96px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.9px;
     text-transform: uppercase;
     text-align: center;
@@ -2193,8 +2211,8 @@
 }
 
 .🐽💬 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     margin: 24px 0 0;
     text-align: center;
 }
@@ -2333,6 +2351,9 @@
 
 .🌈🎚️ .swiper-slide p {
     margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
 }
 
 .🌈🎚️ .swiper-avatar {
@@ -2897,8 +2918,8 @@ p.🌋💬 {
 
 .shop-btn-mobile {
     margin-top: -20px;
-    max-width: 65px !important;
-
+    max-width: 112px !important;
+    order: 2;
 }
 
 .🙂 .shop-btn:not(.shop-btn-mobile) {
