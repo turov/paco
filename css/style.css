@@ -1193,7 +1193,7 @@
     border: none;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .🍍 {
         padding-bottom: 48px;
     }
@@ -1853,7 +1853,7 @@
 
 .🐴💬 {
     margin: 0 auto 16px;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.7px;
     font-weight: 400;
     text-transform: uppercase;
@@ -2128,13 +2128,13 @@
 }
 
 .🐽🍟 {
-    max-width: 355px;
+    /*max-width: 355px;*/
     margin: 0 auto;
 }
 
 .🐽✏️ {
     margin: 0 0 24px;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -2152,7 +2152,7 @@
 .🐽💥 {
     padding-top: 96px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.9px;
     text-transform: uppercase;
     text-align: center;
@@ -2214,14 +2214,15 @@
     margin-right: auto;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .📼 {
         padding: 84px 0;
     }
 
     .📼🍟 {
-        width: 1280px;
+        max-width: 1280px;
         margin: 0 auto;
+        width: 100%;
     }
 
     .📼📹 {
@@ -2252,16 +2253,27 @@
     .🐽💥 {
         width: 146px;
         margin-bottom: 0;
+        font-size: 20px;
     }
+
+    .🐽🍟🐯{
+        padding: 0 6px;
+    }
+
+    /*.🐽🖼️ {*/
+    /*    display: block;*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*}*/
 
     .🐽🥖 {
         padding: 16px 46px;
         font-size: 18px;
     }
 
-    .🐽🥈 {
-        display: block;
-    }
+    /*.🐽🥈 {*/
+    /*    display: block;*/
+    /*}*/
 
     .🐽🍟🐯 {
         display: flex;
@@ -2272,6 +2284,7 @@
 
     .🐽🥇 {
         margin-left: auto;
+        margin-right: auto;
     }
 
     .🐽🥇 .🐽✏️ {
@@ -2279,15 +2292,25 @@
     }
 }
 
+@media (min-width: 1300px) {
+    .🐽🥈 {
+        display: block;
+    }
+
+    .🐽🥇 {
+        margin-right: 0;
+    }
+}
+
 .🌈🙂 {
-    max-width: 355px;
+    /*max-width: 355px;*/
     margin: 0 auto;
 }
 
 .🌈🙂✏️ {
-    max-width: 280px;
+    /*max-width: 280px;*/
     margin: 0 auto 12px;
-    font-size: 24px;
+    font-size: 32px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -2295,17 +2318,21 @@
 .🌈🙂👾 {
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
+    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .🌈🙂💬 {
-    color: #FFE66F;
+    /*color: #FFE66F;*/
     font-size: 18px;
     line-height: 36px;
 }
 
 .🌈🙂🖼️ {
     display: block;
-    margin: 0 auto 32px;
+    margin: 0 auto;
     flex-shrink: 0;
 }
 
@@ -2338,7 +2365,7 @@
 
 .🌈🎚️ .swiper-slide p {
     margin: 0 0 12px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.2px;
 }
@@ -2407,9 +2434,13 @@
     display: none;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .🌈🙂 {
         max-width: 1280px;
+    }
+
+    .🌈🙂👾 {
+        max-width: unset;
     }
 
     .🌈🙂✏️ {
@@ -2465,6 +2496,10 @@
         flex-direction: column;
     }
 
+    .🌈🎚️ .swiper-slide p {
+        font-size: 20px;
+    }
+
     .🌈🎚️ .swiper-slide b {
         margin-top: auto;
     }
@@ -2495,7 +2530,7 @@
 }
 
 .🦊🍟 {
-    max-width: 355px;
+    /*max-width: 355px;*/
     margin: 0 auto;
 }
 
@@ -2505,7 +2540,7 @@
 
 .🦊✏️ {
     margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -2685,13 +2720,13 @@
 }
 
 .🏆🍟 {
-    max-width: 355px;
+    /*max-width: 355px;*/
     margin: 0 auto;
 }
 
 .🏆✏️ {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     text-transform: uppercase;
     margin: 0 0 30px;
 }
@@ -2703,6 +2738,7 @@
     color: #303030;
     cursor: pointer;
     font-weight: 300;
+    font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.14px;
     padding: 18px 43px 18px 5px;
@@ -2740,8 +2776,8 @@
 /* Style the accordion panel. Note: hidden by default */
 .🎛️ {
     margin: 13px 0 24px;
-    font-size: 14px;
-    letter-spacing: 0.14px;
+    font-size: 18px;
+    letter-spacing: 0.18px;
     line-height: 1.4;
     background-color: white;
     display: none;
@@ -2752,7 +2788,7 @@
     margin: 0;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .🏆 {
         padding: 45px 0 84px;
     }
@@ -2819,8 +2855,13 @@
 .🌋✏️ {
     margin: 0 0 8px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     text-transform: uppercase;
+}
+
+.about-slider️ .swiper-slide p {
+    font-size: 18px;
+    letter-spacing: 0.18px;
 }
 
 p.🌋💬 {
@@ -2845,9 +2886,14 @@ p.🌋💬 {
     text-decoration: none;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .🌋 {
         padding: 48px 0;
+    }
+
+    .about-slider️ .swiper-slide p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
     }
 
     .🌋🍟 {
