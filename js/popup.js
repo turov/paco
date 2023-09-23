@@ -9,7 +9,7 @@ slides.forEach((slide) => {
         popup.classList.add('active');
         document.body.style.overflow = 'hidden';
         const id = slide.getAttribute('data-id');
-        video.setAttribute('src', `assets/video/video-preview-${id}.mp4`);
+        video.setAttribute('src', `assets/video/video-full-${id}.mp4`);
     }
 })
 
@@ -17,5 +17,6 @@ popup.onclick = (event) => {
     if (event.target !== video) {
         popup.classList.remove('active');
         document.body.style.overflow = 'auto';
+        video.pause();
     }
 }
