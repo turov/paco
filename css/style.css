@@ -242,6 +242,7 @@
 
 .💡 {
     padding: 0 0 32px;
+    margin-top: 41px;
 }
 
 .💡🍟️ {
@@ -359,6 +360,7 @@
         padding: 0 6px;
         background-image: unset;
         overflow: hidden;
+        margin-top: 44px;
     }
 
     .💡🍟️ {
