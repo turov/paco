@@ -3252,7 +3252,7 @@ p.🌋💬 {
 
 
     background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
+    animation: gradient 20s ease infinite;
 }
 
 @media (min-width: 767px) {
