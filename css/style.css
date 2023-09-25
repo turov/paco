@@ -3243,16 +3243,32 @@ p.🌋💬 {
     letter-spacing: 0.2px;
     text-align: center;
     padding: 8px;
-    background: linear-gradient(to right, rgb(51, 145, 92), #94D591);
+    background: linear-gradient(to right, rgb(51, 145, 92), #94D591, rgb(51, 145, 92), #94D591);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 4;
+
+
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
 }
 
 @media (min-width: 767px) {
     .sup-header {
         font-size: 20px;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
