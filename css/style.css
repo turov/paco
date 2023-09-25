@@ -20,7 +20,7 @@
 
 .🙂 {
     position: fixed;
-    top: 0;
+    top: 41px;
     left: 0;
     padding: 4px 12px;
     width: 100%;
@@ -162,6 +162,7 @@
 
     .🙂 {
         padding: 6px;
+        top: 44px;
     }
 
     .🙂🍟 {
@@ -3232,5 +3233,26 @@ p.🌋💬 {
     .close {
         top: 20px;
         right: 20px;
+    }
+}
+
+.sup-header {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(to right, rgb(51, 145, 92), #94D591);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+@media (min-width: 767px) {
+    .sup-header {
+        font-size: 20px;
     }
 }
