@@ -3,8 +3,6 @@ const bags = form.querySelectorAll('fieldset:nth-child(1) input[type=radio]');
 const weeks = form.querySelectorAll('fieldset:nth-child(2) input[type=radio]');
 const link = form.querySelector('.btn-external');
 
-let formData = new FormData(form);
-
 form.onchange = () => {
     let bagsCount = null;
     let weeksCount = null;
@@ -49,16 +47,3 @@ form.onchange = () => {
             break;
     }
 }
-
-// radios.forEach((radio, index) => {
-//     radio.onchange = () => {
-//         if(radio.checked) {
-//             links.forEach(link => {
-//                 if (!link.classList.contains('hidden')) {
-//                     link.classList.add('hidden');
-//                 }
-//                 links[index].classList.remove('hidden');
-//             })
-//         }
-//     }
-// })
