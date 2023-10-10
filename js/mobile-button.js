@@ -61,7 +61,8 @@
                         "contents": {
                             "img": false,
                             "title": false,
-                            "price": false
+                            "price": false,
+                            "options": false
                         },
                         "text": {
                             "button": "Get Started"

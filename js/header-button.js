@@ -67,7 +67,8 @@
                             "contents": {
                                 "img": false,
                                 "title": false,
-                                "price": false
+                                "price": false,
+                                "options": false
                             },
                             "text": {
                                 "button": btn.getAttribute('data-text') || "Order Now"
