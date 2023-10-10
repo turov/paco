@@ -34,7 +34,7 @@ form.onchange = () => {
             link.href='https://paco-pepper.myshopify.com/a/subscriptions/checkout/46567125778727:1:690138349863'
             break;
         case (bagsCount == 3 && weeksCount == 4) :
-            link.href='https://paco-pepper.myshopify.com/a/subscriptions/checkout/46567125778727:1:690138382631'
+            link.href='https://paco-pepper.myshopify.com/a/subscriptions/checkout/46900943126823:1:690138448167'
             break;
         case (bagsCount == 1 && weeksCount == 6) :
             link.href='https://paco-pepper.myshopify.com/a/subscriptions/checkout/46898180587815:1:690044993831'
