@@ -18,6 +18,15 @@ form.onchange = () => {
     }
 
     switch (true) {
+        case (bagsCount == 1 && weeksCount == 1) :
+            link.href='https://paco-pepper.myshopify.com/products/cat-litter';
+            break;
+        case (bagsCount == 2 && weeksCount == 1) :
+            link.href='https://paco-pepper.myshopify.com/products/2-bags';
+            break;
+        case (bagsCount == 3 && weeksCount == 1) :
+            link.href='https://paco-pepper.myshopify.com/products/3-bags-paco-pepper-olive-pit-cat-litter';
+            break;
         case (bagsCount == 1 && weeksCount == 2) :
             link.href='https://paco-pepper.myshopify.com/a/subscriptions/checkout/46898180587815:1:690044961063';
             break;
