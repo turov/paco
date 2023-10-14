@@ -2017,7 +2017,7 @@
 .🍑🍟 {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .🍑📦 {
@@ -2212,7 +2212,7 @@
         display: flex;
         flex-direction: row-reverse;
 
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .🍑🖼️ {
@@ -3376,6 +3376,13 @@ p.🌋💬 {
     margin: 0 0 30px;
 }
 
+.subscribe-title️-alt {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 60px 0 0;
+}
+
 .subscribe-text {
     font-size: 18px;
     letter-spacing: 0.18px;
@@ -3395,6 +3402,10 @@ p.🌋💬 {
 
 @media (min-width: 1000px) {
     .subscribe-title️ {
+        font-size: 40px;
+    }
+
+    .subscribe-title️-alt {
         font-size: 40px;
     }
 
