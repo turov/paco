@@ -3431,6 +3431,7 @@ p.🌋💬 {
     text-align: center;
     flex-grow: 1;
     cursor: pointer;
+    max-height: 40px;
 }
 
 input[type="radio"]:checked + .🍑📻🎒{
