@@ -1,3 +1,5 @@
+@import "form.css";
+
 .📄 {
     background-color: #ffffff;
     color: #333333;
@@ -2141,8 +2143,8 @@
 .👗💬 {
     color: inherit;
     text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 0.2px;
+    font-size: 16px;
+    letter-spacing: 0.16px;
     margin: 14px 0 22px;
     text-align: center;
 }
@@ -3423,6 +3425,7 @@ p.🌋💬 {
 .🍑🚂🎒 {
     display: flex;
     flex-direction: row;
+    margin-bottom: 24px;
 }
 
 .🍑📻🎒 {

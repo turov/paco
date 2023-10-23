@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="📄">
+<body class="📄 form-page">
 <div class="sup-header">
     🐈 Better for you cat, better for the planet 🌎
 </div>
@@ -38,7 +35,7 @@
                     <a class="🙂🧭🖇" href="reviews.html">Reviews</a>
                 </li>
                 <li class="🙂🧭💥">
-                    <a class="🙂🧭🖇">Subscribe</a>
+                    <a class="🙂🧭🖇" href="subscribe.html">Subscribe</a>
                 </li>
                 <li class="🙂🧭💥">
                     <a class="🙂🧭🖇" href="faq.html">FAQ</a>
@@ -47,73 +44,32 @@
         </nav>
     </div>
 </header>
-<main class="👑">
-    <div class="🍑">
-        <!--        <h1 class="subscribe-title️">Subscribe & Save</h1>-->
-        <!--        <h3 class="subscribe-title-add">Not ready to commit to subscription yet?</h3>-->
-        <h3 class="subscribe-title-add">Individual Bags</h3>
-        <p class="subscribe-text">Buy as many bags as you want without commitments</p>
-        <div class="shop-btn shop-btn-center"></div>
-        <h3 class="subscribe-title️-alt">Subscribe & Save</h3>
-        <div class="🍑🍟">
-            <div class="🍑📦">
-                <img class="🍑🖼️" src="assets/beigecats.jpg" width="355" height="244" alt="🖼️">
+<main class="👑 ">
+    <div class="review-form">
+        <h2 class="review-form__title">Leave a review</h2>
+        <form class="review-form__form" id="review-form">
+            <div class="stars">
+                <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
+                <label class="star star-5" for="star-5"></label>
+                <input class="star star-4" id="star-4" type="radio" name="star" value="4" />
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star" value="3" />
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star" value="2" />
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star" value="1" />
+                <label class="star star-1" for="star-1"></label>
             </div>
-            <form class="🍑👗  form">
-                <fieldset class="🍑🚂">
-                    <legend class="🍑✏️">How many bags ?
-                    </legend>
-                    <input type="radio" name="count" value="1" id="1" checked>
-                    <label class="🍑📻" for="1">
-                        <span class="⛸️"></span>
-                        <div class="📻📦 📻📦🥇">
-                            <b class="📻✏️">1 bag</b>
-                            <span class="📻💰">$16.99</span>
-                        </div>
-                    </label>
-                    <input type="radio" name="count" id="2" value="2">
-                    <label class="🍑📻" for="2">
-                        <span class="⛸️"></span>
-                        <div class="📻📦 📻📦🥈">
-                            <b class="📻✏️">2 bags</b>
-                            <span class="📻💰">$31.98 <span class="old-price">$33.98</span></span>
-                        </div>
-                    </label>
-                    <input type="radio" name="count" id="3" value="3">
-                    <label class="🍑📻" for="3">
-                        <span class="⛸️"></span>
-                        <div class="📻📦 📻📦🥉">
-                            <b class="📻✏️">3 bags</b>
-                            <span class="📻💰">$47.97 <span class="old-price">$50.97</span></span>
-                        </div>
-                    </label>
-                </fieldset>
-                <a href="mailto:support@pacoandpepper.com" class="👗💬">Want to subscribe to more than 3 bags? <br> Contact us here</a>
-
-                <fieldset class="🍑🚂 🍑🚂🎒">
-                    <legend class="🍑✏️">How often ?
-                    </legend>
-                    <!--                    <input type="radio" name="weeks" value="1" id="1t">-->
-                    <!--                    <label class="🍑📻🎒" for="1t">-->
-                    <!--                        <span>One Time</span>-->
-                    <!--                    </label>-->
-                    <input type="radio" name="weeks" value="2" id="2w" checked>
-                    <label class="🍑📻🎒" for="2w">
-                        <span>2 weeks</span>
-                    </label>
-                    <input type="radio" name="weeks" id="4w" value="4">
-                    <label class="🍑📻🎒" for="4w">
-                        <span>4 weeks</span>
-                    </label>
-                    <input type="radio" name="weeks" id="6w" value="6">
-                    <label class="🍑📻🎒" for="6w">
-                        <span>6 weeks</span>
-                    </label>
-                </fieldset>
-                <a href="https://paco-pepper.myshopify.com/a/subscriptions/checkout/46898180587815:1:690044961063"
-                   target="_blank" class="👗🥖 btn-external">Order Now</a>
-            </form>
-        </div>
+            <div class="review-form__field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="review-form__field">
+                <label for="review">Share with your thoughts</label>
+                <textarea type="text" id="review" rows="5" name="review"></textarea>
+            </div>
+            <button type="submit" class="review-form__button" disabled>Submit</button>
+        </form>
     </div>
 </main>
 <footer class="👣">
@@ -187,9 +143,7 @@
 <script src="js/menu.js"></script>
 <script src="js/mobile-button.js"></script>
 <script src="js/header-button.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/swiper.js"></script>
-<script src="js/form.js"></script>
+<script src="js/review-form.js"></script>
 
 <!-- Meta Pixel Code -->
 <script>
