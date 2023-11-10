@@ -65,7 +65,7 @@
                             "options": false
                         },
                         "text": {
-                            "button": "Get Started"
+                            "button": "Order Now"
                         }
                     },
                     "productSet": {
