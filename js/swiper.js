@@ -1,4 +1,9 @@
-const swiper = new Swiper('.swiper', {
+
+
+
+
+if (document.querySelector('.swiperAbout')) {
+    const swiper = new Swiper('.swiperAbout', {
 
     direction: 'horizontal',
     loop: true,
@@ -8,20 +13,44 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+}
 
-const swiper2 = new Swiper('.swiperVideo', {
+if (document.querySelector('.swiperVideo')) {
+    const swiper2 = new Swiper('.swiperVideo', {
 
-    direction: 'horizontal',
-    loop: true,
-    // slidesPerView: 4,
-    // spaceBetween: 10,
-    autoplay: {
-        delay: 100,
-    },
-    // breakpoints: {
-    //     640: {
-    //         slidesPerView: 4,
-    //         spaceBetween: 40
-    //     }
-    // }
-});
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 3000,
+        },
+        breakpoints: {
+            1000: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1300: {
+                slidesPerView: 5,
+                spaceBetween: 40
+            }
+        }
+    });
+}
+
+if (document.querySelector('.swiperReviews')) {
+    const swiperReviews = new Swiper(".swiperReviews", {
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1300: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            }
+        }
+    });
+}
