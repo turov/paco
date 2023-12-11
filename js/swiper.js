@@ -1,7 +1,3 @@
-
-
-
-
 if (document.querySelector('.swiperAbout')) {
     const swiper = new Swiper('.swiperAbout', {
 

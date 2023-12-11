@@ -3704,7 +3704,7 @@ input[type="radio"]:checked + .🍑📻🎒 {
 .giveaway-info {
     width: 100%;
     max-width: 351px;
-    margin: 0 auto;
+    margin: 0 auto 48px;
 }
 
 .giveaway-info__top {
@@ -3740,6 +3740,31 @@ input[type="radio"]:checked + .🍑📻🎒 {
 .giveaway__form {
     max-width: 351px;
     margin: 0 auto 48px;
+}
+
+.giveaway__form p {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+}
+
+.giveaway-sent {
+    width: 100%;
+    max-width: 351px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.giveaway-sent h3 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 @media (min-width: 1000px) {
@@ -3795,7 +3820,7 @@ input[type="radio"]:checked + .🍑📻🎒 {
         line-height: 1.4;
         letter-spacing: 0.2px;
         font-weight: 500;
-        margin-bottom: 40px;
+        margin-bottom: 12px;
     }
 
     .giveaway-info ul {
@@ -3804,7 +3829,7 @@ input[type="radio"]:checked + .🍑📻🎒 {
         letter-spacing: 0.2px;
         font-weight: 500;
         color: #3C845C;
-        margin-bottom: 40px;
+        /*margin-bottom: 40px;*/
     }
 
     .giveaway-info__text {
@@ -3815,6 +3840,6 @@ input[type="radio"]:checked + .🍑📻🎒 {
     }
 
     .giveaway__form {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 }
