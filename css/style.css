@@ -3211,18 +3211,20 @@ p.🌋💬 {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 11;
     transform: translateX(-50%) translateY(-50%);
     border-radius: 50%;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .video-slide:hover .video-slide-play {
     transform: translateX(-50%) translateY(-50%) scale(1.2);
 }
 
+
 .video-slider .swiper-slide {
     background: #77bd97;
-    cursor: pointer;
 }
 
 .video-slider-title {

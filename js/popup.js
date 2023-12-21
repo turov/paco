@@ -5,11 +5,13 @@ const close = popup.querySelector('.close');
 
 
 slides.forEach((slide) => {
-    slide.onclick = () => {
-        popup.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        const id = slide.getAttribute('data-id');
-        video.setAttribute('src', `assets/video/video-full-${id}.mp4`);
+    slide.onclick = (e) => {
+        if (e.target.tagName === 'IMG') {
+            popup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            const id = slide.getAttribute('data-id');
+            video.setAttribute('src', `assets/video/video-full-${id}.mp4`);
+        }
     }
 })
 
