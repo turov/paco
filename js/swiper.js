@@ -15,7 +15,7 @@ if (document.querySelector('.swiperVideo')) {
     const swiper2 = new Swiper('.swiperVideo', {
 
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         slidesPerView: 2,
         spaceBetween: 10,
         autoplay: {
