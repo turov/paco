@@ -57,6 +57,21 @@
     margin: 0 0 12px;
 }
 
+.article-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.article-links a {
+    color: #3C845C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 @media (min-width: 1000px ) {
     .blog {
         padding-top: 32px;
