@@ -1,0 +1,218 @@
+.🙂 {
+    position: fixed;
+    top: 41px;
+    left: 0;
+    padding: 4px 12px;
+    width: 100%;
+    background: white;
+    z-index: 4;
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+    top: 66px;
+}
+
+.🙂🍟 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.🙂🖇️ {
+    order: 0;
+    margin-right: auto;
+}
+
+.🙂🖼️ {
+    display: block;
+    width: 49px;
+    height: 49px;
+}
+
+.🙂🥖 {
+    margin-left: auto;
+    padding: 8px 13px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background: #33915C;
+}
+
+.🙂 .shop-btn {
+    margin-left: auto;
+    max-width: unset;
+    width: 174px;
+}
+
+.🙂🍔 {
+    border: unset;
+    padding: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    background: #FFFFFF;
+    order: 3;
+    margin-left: 12px;
+}
+
+.🙂🍔 span {
+    position: relative;
+    width: 17px;
+    height: 2px;
+    background-color: #3C3C3C;
+}
+
+.🙂🍔 span::before {
+    content: '';
+    width: 17px;
+    height: 2px;
+    background: #3C3C3C;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.🙂🍔 span::after {
+    content: '';
+    width: 17px;
+    height: 2px;
+    background: #3C3C3C;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.🙂🍔.⚽️ span {
+    background: transparent;
+}
+
+.🙂🍔.⚽️ span::before {
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+}
+
+.🙂🍔.⚽️ span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    left: 0;
+}
+
+.🙂🧭 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #FFFFFF;
+    left: 0;
+    top: 57px;
+}
+
+.🙂🧭💥 {
+    border-bottom: 1px solid #767676;
+    padding: 5px;
+}
+
+.🙂🧭📝 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #767676;
+}
+
+.🙂🧭🖇 {
+    position: relative;
+    display: block;
+    max-width: 355px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 1000px ) {
+    .🙂 {
+        padding: 6px;
+        top: 44px;
+    }
+
+    .🙂🍟 {
+        max-width: 1280px;
+    }
+
+    .🙂 .shop-btn {
+        display: block;
+        position: relative;
+    }
+
+
+    .🙂🖼️ {
+        width: 98px;
+        height: 98px;
+    }
+
+    .🙂🍔 {
+        display: none;
+    }
+
+    .🙂🧭 {
+        display: block;
+        position: static;
+        margin-left: 48px;
+    }
+
+    .🙂🥖 {
+        order: 2;
+        flex-shrink: 0;
+        padding: 16px 46px;
+        font-size: 18px;
+    }
+
+    .🙂 .shop-btn {
+        order: 2;
+        flex-shrink: 0;
+        width: 176px;
+    }
+
+    .🙂🧭📝 {
+        border: none;
+        display: flex;
+    }
+
+    .🙂🧭💥 {
+        border: none;
+        padding: 0;
+        margin-right: 83px;
+    }
+
+    .🙂🧭🖇 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .🙂🧭🖇::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #33915C;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+
+    .🙂🧭🖇:link:hover::before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
+}

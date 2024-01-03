@@ -1,0 +1,37 @@
+.profit {
+    padding: 24px 10px;
+}
+
+.profit-container {
+    padding: 24px 0 48px;
+}
+
+
+.profit-image {
+    margin: 0 auto 48px;
+    display: block;
+    max-width: 355px;
+}
+
+@media (min-width: 1300px) {
+    .profit {
+        padding: 0;
+    }
+
+    .profit-image {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .profit-container {
+        background: unset;
+        padding: unset;
+        padding-bottom: 64px;
+    }
+
+    .profit-container .shop-btn {
+
+        margin-top: -96px;
+
+    }
+}
