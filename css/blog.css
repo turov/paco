@@ -57,6 +57,16 @@
     margin: 0 0 12px;
 }
 
+.article ol,
+.article ul {
+    margin: 0;
+}
+
+.article li {
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
 .article-links {
     display: flex;
     align-items: center;
