@@ -82,6 +82,14 @@
     font-weight: 500;
 }
 
+.article .article-image-raw {
+    display: inline-flex;
+    width: unset;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 1000px ) {
     .blog {
         padding-top: 32px;

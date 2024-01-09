@@ -1,0 +1,24 @@
+.seo-section {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 16px;
+    height: 200px;
+    overflow: auto;
+    border: 2px solid #3C845C;
+    border-radius: 4px;
+}
+
+.seo-section h2,
+.seo-section h3,
+.seo-section h4 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.seo-section p {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 1.4;
+}
