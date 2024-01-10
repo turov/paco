@@ -995,16 +995,16 @@
     }
 }
 
-.🍍 {
+.video {
     padding-bottom: 24px;
 }
 
-.🍍🍟 {
+.video-container {
     max-width: 355px;
     margin: 0 auto;
 }
 
-.🍍🍟 iframe {
+.video-container iframe {
     display: block;
     width: 100%;
     height: 200px;
@@ -1012,15 +1012,15 @@
 }
 
 @media (min-width: 1000px) {
-    .🍍 {
+    .video {
         padding-bottom: 48px;
     }
 
-    .🍍🍟 {
+    .video-container {
         max-width: 800px;
     }
 
-    .🍍🍟 iframe {
+    .video-container iframe {
         height: 453px;
     }
 }

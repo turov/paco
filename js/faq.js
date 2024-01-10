@@ -1,12 +1,2 @@
-const acc = document.querySelectorAll(".🪗");
-acc.forEach(elem => {
-    elem.onclick = () => {
-        elem.classList.toggle("⚽️");
-        if (elem.nextElementSibling.style.display === "block") {
-            elem.nextElementSibling.style.display = "none";
-        } else {
-            elem.nextElementSibling.style.display = "block";
-        }
-    }
-})
+const acc=document.querySelectorAll(".\uD83E\uDE97");acc.forEach(l=>{l.onclick=()=>{l.classList.toggle("⚽️"),"block"===l.nextElementSibling.style.display?l.nextElementSibling.style.display="none":l.nextElementSibling.style.display="block"}});
 
