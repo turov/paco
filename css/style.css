@@ -2997,14 +2997,15 @@ p.🌋💬 {
 .popup .videoFull {
     width: 320px;
     height: auto;
+    display: none;
 }
-
-/*.popup .videoFull {*/
-/*    max-width: 404px;*/
-/*}*/
 
 .popup.active {
     display: flex;
+}
+
+.popup.active .videoFull {
+    display: block;
 }
 
 .close {
