@@ -18,7 +18,7 @@
 </head>
 <body class="📄">
 <div class="sup-header">
-    🐈 Better for you cat, better for the planet 🌎
+    🐈 30 Days Money Back Guarantee 🕊️
 </div>
 <header class="🙂">
     <div class="🙂🍟">
@@ -53,15 +53,15 @@
 <main class="👑">
     <section class="💡">
         <div class="💡🍟️">
-<!--            <img class="💡🖼" loading="lazy" src="assets/iintro.jpg" alt="">-->
-            <img class="💡🖼" loading="lazy" src="assets/Gif.gif" alt="">
+            <img class="💡🖼" loading="lazy" src="assets/intro-hearts.jpg" alt="">
+
             <div class="💡🛋️">
                 <div class="💡🙂">
                     <span class="💡🙂📔">15,000+&nbsp;</span>
                     <img class="💡🙂🖼️" loading="lazy" src="assets/five_stars.svg" width="78" height="13" alt="five stars">
                     <span class="💡🙂📔">Reviews</span>
                 </div>
-                <h1 class="💡✏️">Presenting the safest cat litter in the world</h1>
+                <h1 class="💡✏️">Presenting the first dustless cat litter in the world</h1>
                 <p class="💡💬">Discover a cat litter crafted from wholesome natural components, ensuring the well-being
                     of
                     your feline companion while being gentle on your wallet.</p>
@@ -771,6 +771,21 @@
     gtag('js', new Date());
 
     gtag('config', 'G-E6CMJMDEQ8');
+</script>
+
+<script>
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+        heart.innerText = '💗';
+        document.querySelector('.💡').appendChild(heart);
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+    setInterval(createHeart, 200);
 </script>
 
 <!-- POPUP -->

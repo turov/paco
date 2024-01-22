@@ -170,6 +170,24 @@
 }
 
 @media (min-width: 1000px ) {
+    .heart {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        transform: translateY(0);
+        animation: fall 3s linear forwards;
+    }
+
+    @keyframes fall {
+        from {
+            transform: translateY(0vh) translateX(-10vw);
+        }
+        to {
+            transform: translateY(105vh) translateX(10vw);
+        }
+    }
+
     .💡 {
         padding: 0 6px;
         background-image: unset;
@@ -200,7 +218,7 @@
     }
 
     .💡🖼 {
-        /*object-position: -122px -1px;*/
+        object-position: -122px -1px;
         width: 67%;
         margin-bottom: 0;
     }
