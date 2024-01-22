@@ -683,6 +683,12 @@
                 </li>
             </ul>
         </div>
+        <ul class="payments">
+            <li><img src="assets/payments/discover.svg" width="38" height="24"></li>
+            <li><img src="assets/payments/amex.svg" width="38" height="24"></li>
+            <li><img src="assets/payments/mastercard.svg" width="38" height="24"></li>
+            <li><img src="assets/payments/visa.svg" width="38" height="24"></li>
+        </ul>
     </div>
 </footer>
 
@@ -785,7 +791,11 @@
             heart.remove();
         }, 5000);
     }
-    setInterval(createHeart, 200);
+    if (window.innerWidth < 1000) {
+        setInterval(createHeart, 400);
+    } else {
+        setInterval(createHeart, 200);
+    }
 </script>
 
 <!-- POPUP -->
