@@ -9,11 +9,15 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/styles/main.css">
+    <link rel="stylesheet" href="css/contact-us.css">
 </head>
-<body class="📄 form-page">
+<body class="📄">
 <div class="sup-header">
     🐈 30 Days Money Back Guarantee 🕊️
 </div>
@@ -30,7 +34,7 @@
         <nav class="🙂🧭">
             <ul class="🙂🧭📝">
                 <li class="🙂🧭💥">
-                    <a class="🙂🧭🖇" href="about.html">About Us</a>
+                    <a class="🙂🧭🖇">About Us</a>
                 </li>
                 <li class="🙂🧭💥">
                     <a class="🙂🧭🖇" href="blog.html">Blog</a>
@@ -48,32 +52,16 @@
         </nav>
     </div>
 </header>
-<main class="👑 ">
-    <div class="review-form">
-        <h2 class="review-form__title">Leave a review</h2>
-        <form class="review-form__form" id="review-form">
-            <div class="stars">
-                <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
-                <label class="star star-5" for="star-5"></label>
-                <input class="star star-4" id="star-4" type="radio" name="star" value="4" />
-                <label class="star star-4" for="star-4"></label>
-                <input class="star star-3" id="star-3" type="radio" name="star" value="3" />
-                <label class="star star-3" for="star-3"></label>
-                <input class="star star-2" id="star-2" type="radio" name="star" value="2" />
-                <label class="star star-2" for="star-2"></label>
-                <input class="star star-1" id="star-1" type="radio" name="star" value="1" />
-                <label class="star star-1" for="star-1"></label>
+<main class="👑">
+    <div class="contact-us">
+        <div class="contact-us__container">
+            <div class="contact-us__info">
+                <h3>Email Us</h3>
+                <a href="mailto:support@pacoandpepper.com">support@pacoandpepper.com</a>
+                <p>We typically reply within 1 to 2 business days</p>
             </div>
-            <div class="review-form__field">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div class="review-form__field">
-                <label for="review">Share with your thoughts</label>
-                <textarea type="text" id="review" rows="5" name="review"></textarea>
-            </div>
-            <button type="submit" class="review-form__button" disabled>Submit</button>
-        </form>
+            <img class="contact-us__image" src="assets/contact-us.jpg" width="738" height="493" alt="">
+        </div>
     </div>
 </main>
 <footer class="👣">
@@ -125,58 +113,40 @@
 </footer>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () {
-            (m[i].a = m[i].a || []).push(arguments)
-        };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-            if (document.scripts[j].src === r) {
-                return;
-            }
-        }
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(95122843, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-        ecommerce: "dataLayer"
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
     });
 </script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/95122843" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/95122843" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <script src="js/menu.js"></script>
 <script src="js/mobile-button.js"></script>
 <script src="js/header-button.js"></script>
-<script src="js/review-form.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/form.js"></script>
 
 <!-- Meta Pixel Code -->
 <script>
-    !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '666775838888251');
     fbq('track', 'PageView');
