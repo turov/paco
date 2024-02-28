@@ -277,130 +277,6 @@
     }
 }
 
-.🥊 {
-    padding: 24px 12px 68px;
-}
-
-.🥊🍟 {
-    margin: 0 auto;
-    max-width: 351px;
-}
-
-.🥊🎉📦 {
-    max-width: 233px;
-    margin: 0 auto 24px;
-}
-
-.🥊🎉📦📝 {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    max-width: 239px;
-    width: fit-content;
-}
-
-.🥊🎉📦💥 {
-    font-size: 18px;
-    letter-spacing: 0.18px;
-}
-
-.🥊🎉📦✏️ {
-    margin: 0 0 12px;
-    position: relative;
-    padding-top: 85px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.🥊🎉📦 .🥊🎉📦✏️::before {
-    content: '';
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-size: cover;
-}
-
-.🥊🎉📦:nth-child(1) .🥊🎉📦✏️::before {
-    background-image: url('../assets/icon1.svg');
-}
-
-.🥊🎉📦:nth-child(2) .🥊🎉📦✏️::before {
-    background-image: url('../assets/icon2.svg');
-}
-
-
-.🥊🎉📦:nth-child(3) .🥊🎉📦✏️::before {
-    background-image: url('../assets/icon3.png');
-}
-
-.🥊🥖 {
-    display: none;
-}
-
-@media (min-width: 1000px ) {
-    .🥊 {
-        padding: 84px 0;
-    }
-
-    .🥊🍟 {
-        margin: 0 auto;
-        max-width: 1280px;
-    }
-
-    .🥊🎉 {
-        display: flex;
-    }
-
-    .🥊🎉📦 {
-        max-width: 400px;
-        margin-bottom: 64px;
-    }
-
-    .🥊🎉📦✏️ {
-        font-size: 40px;
-        margin-bottom: 12px;
-        padding-top: 112px;
-    }
-
-    .🥊🎉📦 .🥊🎉📦✏️::before {
-        left: 0;
-        transform: unset;
-        width: 100px;
-        height: 100px;
-    }
-
-    .🥊🎉📦📝 {
-        max-width: 100%;
-        width: unset;
-    }
-
-    .🥊🎉📦💥 {
-        font-size: 20px;
-        letter-spacing: 0.2px;
-        line-height: 1.4;
-    }
-
-    .🥊🥖 {
-        display: block;
-        font-weight: 400;
-        letter-spacing: 0.7px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        border-radius: 8px;
-        background: #33915C;
-        text-decoration: none;
-        margin: 0 auto;
-        width: fit-content;
-        padding: 16px 46px;
-        font-size: 18px;
-    }
-}
-
-
 .⚾️ {
     background: #DDFFDC;
     padding: 48px 12px;
@@ -939,6 +815,7 @@
 
     .🪜💥✏️ {
         font-size: 40px;
+        min-height: 168px;
     }
 
     .🪜💥💬 {
