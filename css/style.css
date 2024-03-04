@@ -2055,15 +2055,6 @@
     text-align: center;
 }
 
-.🌈🙂👾 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
-    max-width: 355px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .🌈🙂💬 {
     /*color: #FFE66F;*/
     font-size: 18px;
@@ -2174,24 +2165,123 @@
     display: none;
 }
 
+.reviews-data {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.reviews-data > a {
+    border-left: 1px solid #eaeaea;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333333;
+}
+
+.reviews-data > a > img {
+    margin-left: 5px;
+}
+
+.reviews-summary {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    border-right: 1px solid #eaeaea;
+}
+
+.reviews-summary div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.reviews-summary div p {
+    margin: 5px 0 0 0;
+}
+
+.reviews-summary .avg {
+    color: #33915c;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.reviews-rates {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.reviews-rates * {
+    font-weight: 400;
+}
+
+.reviews-rates > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.reviews-rates .score, .reviews-rates img, .reviews-rates .progress {
+    margin-right: 8px;
+}
+
+.reviews-rates .progress {
+    margin-right: 20px;
+    margin-left: 6px;
+}
+
+.reviews-rates .progress, .reviews-rates .progress > div {
+    background-color: #eaeaea;
+    width: 150px;
+    height: 8px;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.reviews-rates .progress > div {
+    background-color: #33915c;
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .reviews-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-summary {
+        padding-right: 0;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .reviews-rates {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .reviews-data > a {
+        padding-left: 0;
+        border: none;
+        margin-top: 15px;
+    }
+}
+
+
 @media (min-width: 1000px) {
     .🌈🙂 {
         max-width: 1280px;
-    }
-
-    .🌈🙂👾 {
-        max-width: unset;
     }
 
     .🌈🙂✏️ {
         max-width: 100%;
         font-size: 40px;
         margin-bottom: 9px;
-    }
-
-    .🌈🙂👾 {
-        margin: 0 auto 26px;
-        width: fit-content;
     }
 
     .🌈🙂💬 {
