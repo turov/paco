@@ -58,7 +58,8 @@
 <main class="👑">
     <section class="💡">
         <div class="💡🍟️">
-            <img class="💡🖼" loading="lazy" src="assets/banner.png" alt="">
+<!--            <img class="💡🖼" loading="lazy" src="assets/banner.png" alt="">-->
+            <img class="💡🖼" loading="lazy" src="assets/Cat-with-flag.jpg" alt="">
 
             <div class="💡🛋️">
                 <div class="💡🙂">
@@ -726,6 +727,26 @@
 <script src="js/swiper.js" defer></script>
 <script src="js/popup.js" defer></script>
 <script src="js/reviews.js" defer></script>
+
+<script>
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+        heart.innerText = '🇺🇸';
+        document.querySelector('.💡').appendChild(heart);
+        setTimeout(() => {
+            heart.remove();
+        }, 4000);
+    }
+    if (window.innerWidth < 1000) {
+        setInterval(createHeart, 400);
+    } else {
+        setInterval(createHeart, 300);
+    }
+</script>
+
 
 
 <!-- Meta Pixel Code -->
