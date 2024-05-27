@@ -728,13 +728,21 @@
 <script src="js/popup.js" defer></script>
 <script src="js/reviews.js" defer></script>
 
+<style>
+    .heart {
+        width: 40px;
+        height: 23px;
+        background: url('assets/usa-flag.png');
+    }
+</style>
+
 <script>
     function createHeart() {
         const heart = document.createElement('div');
         heart.classList.add('heart');
         heart.style.left = Math.random() * 100 + "vw";
         heart.style.animationDuration = Math.random() * 2 + 3 + "s";
-        heart.innerText = '🇺🇸';
+
         document.querySelector('.💡').appendChild(heart);
         setTimeout(() => {
             heart.remove();
