@@ -45,7 +45,8 @@
     padding: 24px 12px;
 }
 
-.article h3 {
+.article h3,
+.article h1 {
     margin: 0 0 12px;
     font-size: 18px;
     font-weight: 700;
